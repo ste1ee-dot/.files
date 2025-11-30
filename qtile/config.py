@@ -236,18 +236,18 @@ screens = [
             [   
                 widget.Spacer(
                     length = 18,
-                    background = '#033C4B',
+                    background = '#046F5F',
                 ),
                 
-                widget.Image(
-                    filename = '~/.config/qtile/Assets/launch_Icon.png',
-                    background = '#033C4B',
-                    mouse_callbacks = {'Button1': open_launcher},
-                ),
+                #widget.Image(
+                #    filename = '~/.config/qtile/Assets/launch_Icon.png',
+                #    background = '#033C4B',
+                #    mouse_callbacks = {'Button1': open_launcher},
+                #),
 
-                widget.Image(
-                    filename = '~/.config/qtile/Assets/6.png',
-                ),
+                #widget.Image(
+                #    filename = '~/.config/qtile/Assets/2.png',
+                #),
 
                 widget.GroupBox(
                     fontsize = 16,
@@ -306,7 +306,6 @@ screens = [
 
                 widget.Image(
                     filename = '~/.config/qtile/Assets/1.png',                
-                    background = '#52548D',
                 ),
 
                 widget.CPU(
@@ -318,18 +317,15 @@ screens = [
                     background = '#046F5F',
                     mouse_callbacks = {'Button1': open_btop},
                 ),
-
-                widget.Image(
-                    filename = '~/.config/qtile/Assets/5.png',
-                ),
-
-                widget.Image(
-                    filename = '~/.config/qtile/Assets/2.png',                
-                    background = '#52548D',
+                
+                widget.Spacer(
+                    length = 6,
+                    background = '#046f5f',
                 ),  
-  
+
                 widget.Systray(
                     background = '#046F5F',
+                    foreground = '#046F5F',
                     icon_size = 24,
                     padding = 3,
                 ),
@@ -340,13 +336,18 @@ screens = [
 
                 widget.Image(
                     filename = '~/.config/qtile/Assets/2.png',                
-                    background = '#52548D',
-                ),                    
-                                                
-                widget.Spacer(
-                    length = 0,
-                    background = '#046f5f',
                 ),  
+  
+
+                #widget.Image(
+                #    filename = '~/.config/qtile/Assets/5.png',
+                #),
+
+                #widget.Image(
+                #    filename = '~/.config/qtile/Assets/2.png',                
+                #),                    
+
+                                                
                
                 widget.Memory(
                     format = 'RAM:({MemUsed:.0f}MB/{MemTotal:.0f}MB)',
@@ -389,7 +390,6 @@ screens = [
 
                 widget.Image(
                     filename = '~/.config/qtile/Assets/1.png',                
-                    background = '#4B427E',
                 ),
 
                 widget.Image(
@@ -434,9 +434,10 @@ screens = [
                 ),
             ],
             30,  # Bar size (all axis)
-            margin = [0,8,6,8] # Bar margin (Top,Right,Bottom,Left)
+            background = "#00000000",
+            margin = [2,4,4,4] # Bar margin (Top,Right,Bottom,Left)
         ),
-        wallpaper='~/.config/qtile/Wallpaper/Skyscraper.png',
+        wallpaper='~/Pictures/wallpapers/sunlight_wasashi.png',
         wallpaper_mode="fill",
     ),
 ]
